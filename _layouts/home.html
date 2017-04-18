@@ -10,7 +10,7 @@ layout: default
     {% assign author = site.contributors[post.contributor] %}
     <article>
       <header>
-        <h1><a href="{{ post.permalink }}">{{ post.title }}</a></h1>
+        <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
       </header>
 
       <section class="post_excerpt">
@@ -36,21 +36,13 @@ layout: default
 </section>
 
 <nav class="prev-next">
-  <ul class="posts posts--previous-next">
+  <ul>
     {% if page.previous %}
-      <li>
-        <h4 class="pagination-title"><a href="{{ page.previous.url }}">{{ page.previous.title }}</a></h4>
-        <h5 class="pagination-date">{{ page.previous.date }}</h5>
-        <p class="pagination-description">{{ page.previous.description }}</p>
-      </li>
+      <li>&laquo;&nbsp;<a href="{{ page.previous.url }}">{{ page.previous.title }}</a></li>
     {% endif %}
-      <li><a href="./archive"><data data-icon="ei-arrow-right"></data> Archive</a></li>
+      <li>&middot;&nbsp;<a href="./archive">Archive</a>&nbsp;&middot;</li>
     {% if page.next %}
-      <li>
-        <h4 class="pagination-title"><a href="{{ page.next.url }}">{{ page.next.title }}</a></h4>
-        <h5 class="pagination-date">{{ page.next.date }}</h5>
-        <p class="pagination-description">{{ page.next.description }}</p>
-      </li>
+      <li><a href="{{ page.next.url }}">{{ page.next.title }}</a>;&nbsp;&raquo;</li>
     {% endif %}
   </ul>
 </nav>
