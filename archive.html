@@ -1,0 +1,19 @@
+---
+layout: default
+title: Archive
+---
+<h1>Archive</h1>
+
+<section class="archive_list">
+  {% for post in site.posts %}
+    {% assign currentdate = post.date | date: "%Y" %}
+    {% if currentdate != date %}
+      {% unless forloop.first %}</ul>{% endunless %}
+      <h2 id="y{{post.date | date: "%Y"}}">{{ currentdate }}</h2>
+      <ul>
+      {% assign date = currentdate %}
+    {% endif %}
+    <li><span class="date">{{ post.date | date: "%B %e" }}</span> <a href="{{ post.url }}">{{ post.title }}</a> ({{post.contributor}})</li>
+    {% if forloop.last %}</ul>{% endif %}
+  {% endfor %}
+</section>

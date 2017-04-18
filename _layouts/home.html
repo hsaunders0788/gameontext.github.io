@@ -6,17 +6,51 @@ layout: default
 </section>
 
 <section class="articles">
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        {% assign date_format = "%b %-d, %Y" %}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
+  {% for post in site.posts limit:5%}
+    {% assign author = site.contributors[post.contributor] %}
+    <article>
+      <header>
+        <h1><a href="{{ post.permalink }}">{{ post.title }}</a></h1>
+      </header>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+      <section class="post_excerpt">
+          {{ post.excerpt }}
+      </section>
 
+      <footer>
+        {% assign tags = (post.tags | sort) %}
+        {% if post.content.size > post.excerpt.size %}
+        <div>[<a class="read-more" href="{{ post.url | prepend: site.baseurl }}">more</a>]</div>
+        {% endif %}
+        <time class="post_date">{{ post.date | date: "%d %B %Y" }}</time> by
+        <address class="author"><a rel="author" target="_blank" href="https://github.com/{{author.github}}">{{ post.contributor }}</a></address>
+        <div class="tags">tags: <ul>
+          {% for tag in tags %}
+              <li><a href="">{{tag}}</a></li>
+          {% endfor %}
+          </ul>
+        </div>
+      </footer>
+    </article>
+  {% endfor %}
 </section>
+
+<nav class="prev-next">
+  <ul class="posts posts--previous-next">
+    {% if page.previous %}
+      <li>
+        <h4 class="pagination-title"><a href="{{ page.previous.url }}">{{ page.previous.title }}</a></h4>
+        <h5 class="pagination-date">{{ page.previous.date }}</h5>
+        <p class="pagination-description">{{ page.previous.description }}</p>
+      </li>
+    {% endif %}
+      <li><a href="./archive"><data data-icon="ei-arrow-right"></data> Archive</a></li>
+    {% if page.next %}
+      <li>
+        <h4 class="pagination-title"><a href="{{ page.next.url }}">{{ page.next.title }}</a></h4>
+        <h5 class="pagination-date">{{ page.next.date }}</h5>
+        <p class="pagination-description">{{ page.next.description }}</p>
+      </li>
+    {% endif %}
+  </ul>
+</nav>

@@ -2,17 +2,15 @@
 layout: post
 title: Example blog post
 summary: Tweet-length summary of the post
-tags: fun profit
+tags: [fun, profit]
 contributor: erin
 ---
 Make sure contributor is listed in \_config.yml !
 
-category
-categories
-Instead of placing posts inside of folders, you can specify one or more categories that the post belongs to. When the site is generated the post will act as though it had been set with these categories normally. Categories (plural key) can be specified as a YAML list or a space-separated string.
+Use only h2 - h6 ...
 
-tags
-Similar to categories, one or multiple tags can be added to a post. Also like categories, tags can be specified as a YAML list or a space-separated string.
+tags: [array, of, tags]
+One or multiple tags can be added to a post.
 
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
@@ -23,9 +21,7 @@ There should be whitespace between paragraphs.
 
 There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
 
-# [](#header-1)Header 1
-
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+<!--more-->
 
 ## [](#header-2)Header 2
 
