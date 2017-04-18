@@ -98,7 +98,7 @@ header.head .inner div {
   letter-spacing: 0;
 }
 .articles > article > header > h1 {
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 section.home,
 nav,
@@ -111,6 +111,7 @@ nav {
 nav ul,
 nav li,
 article footer address,
+article footer .tags,
 article footer .tags ul,
 article footer .tags li {
   display: inline;

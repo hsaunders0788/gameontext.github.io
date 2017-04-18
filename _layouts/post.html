@@ -15,7 +15,7 @@ layout: default
   <footer>
     {% assign tags = (page.tags | sort) %}
     <time class="post_date">{{ page.date | date: "%d %B %Y" }}</time> by
-    <address class="author"><a rel="author" target="_blank" href="https://github.com/{{author.github}}">{{ page.contributor }}</a></address>
+    <address class="author"><a rel="author" target="_blank" href="https://github.com/{{author.github}}">{{ page.contributor }}</a></address> &middot;
     <div class="tags">tags: <ul>
       {% for tag in tags %}
           <li><a href="">{{tag}}</a></li>
