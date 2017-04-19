@@ -18,6 +18,7 @@ gems:
   - jekyll-feed
   - jekyll-avatar
   - jekyll-sitemap
+  - jekyll-mentions
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -32,3 +33,8 @@ contributors:
     web: http://ebullientworks.com/
     twitter: ebullientworks
     github: ebullient
+  adam_p:
+    twitter: MarkNSweep
+    github: MarkNSweep
+  ozzy:
+    github: BarDweller
