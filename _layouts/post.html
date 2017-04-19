@@ -1,19 +1,11 @@
 ---
 layout: default
 ---
-<article>
-
+<article class="post"s>
   {% assign author = site.contributors[page.contributor] %}
+  {% assign tags = (page.tags | sort) %}
   <header>
-    <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
-  </header>
-
-  <section class="post">
-      {{ page.content }}
-  </section>
-
-  <footer>
-    {% assign tags = (page.tags | sort) %}
+    <h1>{{ page.title }}</h1>
     <time class="post_date">{{ page.date | date: "%d %B %Y" }}</time> by
     <address class="author"><a rel="author" target="_blank" href="https://github.com/{{author.github}}">{{ page.contributor }}</a></address> &middot;
     <div class="tags">tags: <ul>
@@ -22,7 +14,11 @@ layout: default
       {% endfor %}
       </ul>
     </div>
-  </footer>
+  </header>
+
+  <section class="post">
+      {{ page.content }}
+  </section>
 </article>
 
 <nav class="prev-next">
@@ -30,7 +26,7 @@ layout: default
     {% if page.previous %}
       <li>&laquo;&nbsp;<a href="{{ page.previous.url }}">{{ page.previous.title }}</a></li>
     {% endif %}
-      <li>&middot;&nbsp;<a href="./archive">Archive</a>&nbsp;&middot;</li>
+      <li>&middot;&nbsp;<a href="/archive">Archive</a>&nbsp;&middot;</li>
     {% if page.next %}
       <li><a href="{{ page.next.url }}">{{ page.next.title }}</a>;&nbsp;&raquo;</li>
     {% endif %}
