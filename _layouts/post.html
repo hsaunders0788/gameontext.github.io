@@ -2,13 +2,13 @@
 layout: default
 ---
 <article class="post">
-  {% assign author = site.contributors[page.contributor] %}
+  {% assign author = site.data.authors[page.author] %}
   {% assign tags = (page.tags | sort) %}
   <header>
     <h1>{{ page.title }}</h1>
     <div class="byline">
       <div><time class="post_date">{{ page.date | date: "%d %B %Y" }}</time> by
-           <address class="author"><a rel="author" target="_blank" href="https://github.com/{{author.github}}">{{ page.contributor }}</a></address>
+           <address class="author"><a rel="author" target="_blank" href="https://github.com/{{author.github}}">{{ page.author }}</a></address>
       </div>
       <div class="tags">tags: <ul>
         {% for tag in tags %}

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Game On! at JavaOne 2016
-contributor: adam
+author: adam_p
 canonical: https://developer.ibm.com/wasdev/blog/2016/09/29/game-javaone-2016/
 tags: [javaone, conferences]
 ---

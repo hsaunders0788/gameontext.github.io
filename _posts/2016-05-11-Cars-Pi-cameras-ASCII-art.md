@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cars, Pi cameras and ASCII art&#58; Microservices with Liberty and Game On!
-contributor: erin
+author: erin
 canonical: https://developer.ibm.com/wasdev/blog/2016/05/11/cars-pi-cameras-and-ascii-art-microservices-with-liberty-and-game-on/
 tags: [iot, hacking]
 ---

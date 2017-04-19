@@ -3,9 +3,9 @@ layout: post
 title: Example blog post
 summary: Tweet-length summary of the post
 tags: [fun, profit]
-contributor: erin
+author: erin
 ---
-Make sure contributor is listed in \_config.yml !
+Make sure author is listed in `_data/authors.yml` !
 
 Use only h2 - h6 ...
 

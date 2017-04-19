@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Explore microservices with a text-based adventure
-contributor: erin
+author: erin
 canonical: https://developer.ibm.com/wasdev/blog/2016/05/04/game-explore-microservices-text-based-adventure/
 tags: [iot, hacking]
 ---
