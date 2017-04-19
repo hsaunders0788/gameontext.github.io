@@ -18,13 +18,16 @@ describes our own misadventures as we do the same.
     <article>
       <header>
         <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-        <time class="post_date">{{ post.date | date: "%d %B %Y" }}</time> by
-        <address class="author"><a rel="author" target="_blank" href="https://github.com/{{author.github}}">{{ post.contributor }}</a></address> &middot;
-        <div class="tags">tags: <ul>
-          {% for tag in tags %}
+        <div class="byline">
+          <div><time class="post_date">{{ post.date | date: "%d %B %Y" }}</time> by
+               <address class="author"><a rel="author" target="_blank" href="https://github.com/{{author.github}}">{{ post.contributor }}</a></address>
+          </div>
+          <div class="tags">tags: <ul>
+            {% for tag in tags %}
               <li><a href="">{{tag}}</a></li>
-          {% endfor %}
-          </ul>
+            {% endfor %}
+            </ul>
+          </div>
         </div>
       </header>
 
@@ -40,14 +43,4 @@ describes our own misadventures as we do the same.
   {% endfor %}
 </section>
 
-<nav class="prev-next">
-  <ul>
-    {% if page.previous %}
-      <li>&laquo;&nbsp;<a href="{{ page.previous.url }}">{{ page.previous.title }}</a></li>
-    {% endif %}
-      <li>&middot;&nbsp;<a href="./archive">Archive</a>&nbsp;&middot;</li>
-    {% if page.next %}
-      <li><a href="{{ page.next.url }}">{{ page.next.title }}</a>;&nbsp;&raquo;</li>
-    {% endif %}
-  </ul>
-</nav>
+{% include prevnext.html %}

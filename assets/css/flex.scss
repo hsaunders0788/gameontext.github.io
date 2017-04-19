@@ -22,7 +22,7 @@ body {
   flex-wrap: nowrap;
 }
 
-/* Main text elements
+/* Headings
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1, h2, h3, h4, h5, h6 {
   margin-top: 1rem;
@@ -35,6 +35,51 @@ h4 { font-size: 2.4rem; line-height: 1.35; letter-spacing: -.08rem; }
 h5 { font-size: 1.8rem; line-height: 1.5;  letter-spacing: -.05rem; }
 h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 
+.articles article header h1 {
+  font-size: 2.8rem; line-height: 1.25; letter-spacing: -.1rem;
+}
+
+.archive_list h2 {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    font-size: 1.8rem;
+}
+
+/* Page Header
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+header.head h1 {
+  margin-top: 0;
+  margin-bottom: 0.2rem;
+  font-size: 42px;
+  font-weight: normal;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+header.head h1 .on {
+  font-weight: bold;
+}
+header.head div {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.2rem;
+  font-weight: normal;
+  line-height: 1.3rem;
+  letter-spacing: 0;
+}
+/* Post Header
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+article header {
+  margin-bottom: 1rem;
+}
+article header h1 {
+  margin-bottom: 0;
+}
+article header .byline {
+  color: gray;
+}
+
+/* Other text elements
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 p {
   margin-top: 0;
 }
@@ -49,24 +94,37 @@ header.head {
 }
 footer.foot {
   text-align: center;
-  height: 2em;
+  height: 2rem;
 }
 nav.prev-next {
   margin-top: 1.5rem;
-  margin-bottom: .5em;
+  margin-bottom: .5rem;
 }
-nav ul,
-nav li,
-article footer address,
-article footer .tags,
-article footer .tags ul,
-article footer .tags li {
+article header .tags {
+  display: none;
+}
+article header address,
+article header .tags ul,
+article header .tags li {
   display: inline;
 }
-nav ul,
-article footer .tags ul {
+article header .tags ul {
   padding-left: 0;
   list-style-type: none;
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+.center {
+  width: 10rem;
+  text-align: center;
+}
+.right, .left {
+  width: 1rem;
+  padding: 0 5px;
 }
 /* Colors
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -95,6 +153,9 @@ section.home {
   color: #35566B;
   border-bottom: 1px solid #ccc;
 }
+article header h1 {
+  border-bottom: 1px solid #35566B;
+}
 /* Link decorations
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 section a {
@@ -102,34 +163,12 @@ section a {
   border-bottom: 1px solid #ccc;
 }
 nav.project a,
-header.head h1 a {
+header h1 a {
   text-decoration: none;
   border: none;
 }
 nav.project a {
-  font-weight: bold;
   padding: 5px;
-}
-/* Header
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-header.head h1 {
-  margin-top: 0;
-  margin-bottom: 0.2em;
-  font-size: 42px;
-  font-weight: normal;
-  line-height: 1;
-  letter-spacing: -1px;
-}
-header.head h1 .on {
-  font-weight: bold;
-}
-header.head div {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: .9em;
-  font-weight: normal;
-  line-height: 1.3;
-  letter-spacing: 0;
 }
 /* Layout
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -142,11 +181,25 @@ nav.project {
   display: flex;
   justify-content: space-around;
 }
+article header .byline {
+  display: flex;
+  justify-content: space-between;
+}
+nav.prev-next {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
 header.head a.button {
   display: none;
 }
 nav.project a > span {
   display: none;
+}
+@media(min-width: 400px) {
+  article header .tags {
+    display: inline;
+  }
 }
 /* Larger than phablet */
 @media (min-width: 550px) {
@@ -173,8 +226,8 @@ nav.project a > span {
     width: 134px;
     height: 58px;
     padding: 22px 0 0 68px;
-    font-size: 1.3em;
-    line-height: 1.2;
+    font-size: 1.3rem;
+    line-height: 1.2rem;
     text-decoration: none;
     color: #fff;
     background: transparent url(../images/github-button.png) 0 0 no-repeat;
