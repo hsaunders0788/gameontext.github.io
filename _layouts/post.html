@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<article class="post"s>
+<article class="post">
   {% assign author = site.contributors[page.contributor] %}
   {% assign tags = (page.tags | sort) %}
   <header>
@@ -16,9 +16,10 @@ layout: default
         {% endfor %}
         </ul>
       </div>
+    </div>
   </header>
 
-  <section class="post">
+  <section class="content">
       {{ page.content }}
   </section>
 </article>
