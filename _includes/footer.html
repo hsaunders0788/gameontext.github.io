@@ -1,5 +1,10 @@
 <footer class="foot">
-  Maintained by us
+  <div id="copyrights">&#169; 2016-{{site.time | date: "%Y" }} under terms of the Apache License 2.0.</div>
+
+  <div>Follow us:
+  <a target="_blank" href="https://twitter.com/gameontext" title="Follow @gameontext"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+  <a target="_blank" href="{{ "/feed.xml" | relative_url }}" title="Subscribe"><i class="fa fa-rss" aria-hidden="true"></i></a>
+  </div>
 </footer>
 
 {% if site.google_analytics %}

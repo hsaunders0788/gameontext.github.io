@@ -35,10 +35,6 @@ h4 { font-size: 2.4rem; line-height: 1.35; letter-spacing: -.08rem; }
 h5 { font-size: 1.8rem; line-height: 1.5;  letter-spacing: -.05rem; }
 h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 
-.articles article header h1 {
-  font-size: 2.8rem; line-height: 1.25; letter-spacing: -.1rem;
-}
-
 .archive_list h2 {
     margin-top: .5rem;
     margin-bottom: .5rem;
@@ -71,6 +67,10 @@ header.head div {
 article header {
   margin-bottom: 1rem;
 }
+.articles article header h1 { /* Just for post in list */
+  margin-top: 1.5rem;
+  font-size: 2.8rem; line-height: 1.25; letter-spacing: -.1rem;
+}
 article header h1 {
   margin-bottom: 0;
 }
@@ -83,6 +83,7 @@ article header .byline {
 p {
   margin-top: 0;
 }
+footer.foot,
 section.home,
 section.articles,
 section.page,
@@ -94,7 +95,6 @@ header.head {
 }
 footer.foot {
   text-align: center;
-  height: 2rem;
 }
 nav.prev-next {
   margin-top: 1.5rem;
@@ -136,7 +136,8 @@ a:hover {
 header.head,
 header.head div,
 header.head h1 a,
-footer.foot {
+footer.foot,
+footer.foot a {
   color: #fff;
   background-color: #35566B;
 }
@@ -181,6 +182,10 @@ nav.project {
   display: flex;
   justify-content: space-around;
 }
+footer.foot {
+  display: flex;
+  flex-direction: column;
+}
 article header .byline {
   display: flex;
   justify-content: space-between;
@@ -190,12 +195,14 @@ nav.prev-next {
   flex-wrap: nowrap;
   justify-content: center;
 }
+/* Hide extra content until wide viewport */
 header.head a.button {
   display: none;
 }
 nav.project a > span {
   display: none;
 }
+/* Reveal and adjust as screen gets larger */
 @media(min-width: 400px) {
   article header .tags {
     display: inline;
@@ -234,5 +241,9 @@ nav.project a > span {
   }
   header.head div {
     margin-right: 220px;
+  }
+  footer.foot {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }

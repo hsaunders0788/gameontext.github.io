@@ -25,7 +25,6 @@ exclude:
   - Dockerfile
   - docker-compose.yml
   - README.md
-  - CONTRIBUTING.md
 
 # Contributors
 contributors:
