@@ -121,6 +121,24 @@ article header .tags ul {
   width: 1rem;
   padding: 0 5px;
 }
+.archive_list ul {
+  padding-left: 15px;
+  list-style-type: none;
+}
+.archive_list li {
+  padding-bottom: 5px;
+}
+.archive_list .date {
+  font-family: 'PT Mono', Courier, 'Menlo', 'Andale Mono', monospace;
+  color: #999;
+  font-size: 1rem;
+}
+.archive_list .date::before {
+  content: '[';
+}
+.archive_list .date::after {
+  content: ']';
+}
 /* Colors
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
