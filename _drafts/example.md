@@ -5,11 +5,23 @@ summary: Tweet-length summary of the post
 tags: [fun, profit]
 author: erin
 ---
-Make sure author is listed in `_data/authors.yml` !
+http://jekyllrb.com/docs/structure/
+
+Drafts are unpublished posts.
+The format of these files is without a date: title.md
+
+## Make sure author is listed in `_data/authors.yml` !
 
 Use only h2 - h6 ...
 
 tags: [array, of, tags]
+or
+tags:
+- game-on
+- microservices
+- java
+- liberty
+
 One or multiple tags can be added to a post.
 
 

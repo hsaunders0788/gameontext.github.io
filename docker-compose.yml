@@ -6,7 +6,9 @@ services:
     command: bundle exec jekyll s
     volumes:
       - '.:/srv/jekyll'
+      - '.vendor:/srv/jekyll/vendor'
     ports:
       - "4000:4000"
     environment:
       - POLLING
+      - BUNDLE_CACHE
