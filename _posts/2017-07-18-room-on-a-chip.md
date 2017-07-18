@@ -126,7 +126,7 @@ This should feel pretty familiar if you've read any of the Java Room examples. L
 
 Our first bit of real Game On! response handling has snuck in there. When a socket connects to us, we'll send back an "ack,{"version":[1]}" response. That's enough to meet the game's handshake requirements, so we get proper room events coming through as type WStype_TEXT in future. If you run this sketch as is, and [register your websocket address with Game On!](https://book.gameontext.org/walkthroughs/registerRoom.html) then you'll see all the room packets go past after you enter your room.  Don't forget you need to use port forwarding, or something similar to route an internet facing address & port back to the witty on port 9999, or Game On! will not be able to reach you!
 
-So now we're recieving proper Game On! websocket protocol packets as documented over at https://gameontext.gitbooks.io/gameon-gitbook/content/microservices/WebSocketProtocol.html
+So now we're recieving proper [Game On! websocket protocol packets](https://gameontext.gitbooks.io/gameon-gitbook/content/microservices/WebSocketProtocol.html) (documented in our [book](https://book.gameontext.org/)):
 
 >  The protocol used by Game On! is text (rather than binary), and uses a simple comma-delimited header followed by a JSON payload. `Just,like,{"this": "ok?"}`
 
@@ -153,7 +153,7 @@ The first thing we need to do is split that initial packet up to extract the rou
       }
     }
 
-That allows us to write something looking a little like this, within the WStype_TEXT case statement..
+That allows us to write something looking a little like this, within the `WStype_TEXT` case statement..
 
     if(payload!=NULL){
         char *parts[3];
@@ -176,7 +176,7 @@ That allows us to write something looking a little like this, within the WStype_
       Serial.println("ERROR, empty websocket packet.");
     }
 
-Which as you can see is now calling a bunch of new functions, addPlayer, processCommand, and removePlayer.
+Which as you can see is now calling a bunch of new functions: `addPlayer`, `processCommand`, and `removePlayer`.
 
 `addPlayer` handles sending the player the initial room description, which also carries information about the room inventory etc back to Game On. It also handles sending a message to everyone saying the Player has entered the room.
 
@@ -186,7 +186,7 @@ It's kind of crude to treat the `roomHello` and `roomGoodbye` in this manner, bu
 
 That leaves `processCommand`, which basically takes the input from the user, uses the Arduino String library to lowercase it, and compares it against a fixed set of expected commands, like `/look` or `/go` and then sends the appropriate response back.
 
-Yes, the source code snippets have kind of stopped here ;-p You can view the full project over at https://github.com/gameontext/esp8266-room/ .. but it's worth covering a few more of the important methods before we're done here.
+Yes, the source code snippets have kind of stopped here ;-p You can view the full project [on GitHub](https://github.com/gameontext/esp8266-room/), but it's worth covering a few more of the important methods before we're done here.
 
 Most messages are chat type messages, or text destined for the player, or other players in the room. For those we use a utility method called `sendMessageToRoom`. It performs a little string manipulation, then uses ArduinoJson to build up the JSON object expected by the game protocol. The object is serialized out into a buffer, which is then sent to the websocket of the user, or broadcast to all websockets, depending on if the message is just for the user, or for everyone. See `sendMessageToRoom` for more.
 
