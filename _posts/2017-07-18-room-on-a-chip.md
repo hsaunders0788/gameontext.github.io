@@ -10,7 +10,7 @@ author: ozzy
 
 Game On (http://gameontext.org/) is a fun little text adventure written using a Microservice architecture. It's also extensible, allowing users to write their own 'Rooms' (locations within the text adventure world), that run as Microservices, in the cloud, on their own systems, etc.
 
-I've played with Arduino's and Raspberry Pi's, and similar for quite some time. I tried having an Arduino read data from a Floppy Drive, which was fun, and ultimately led to http://hackaday.com/2012/03/31/floppy-autoloader-takes-the-pain-out-of-archiving-5000-amiga-disks/ From there, I ended up moving on from Arduino to the Maple, then from there to a Teensy 3.0, and most recently, a rather fun little collection of boards based around a Chip known as the ESP8266 (https://en.wikipedia.org/wiki/ESP8266)
+I've played with Arduino's and Raspberry Pi's, and similar for quite some time. I tried having an Arduino read data from a Floppy Drive, which was fun, and ultimately led to  [a crazy floppy disk autoloader](http://hackaday.com/2012/03/31/floppy-autoloader-takes-the-pain-out-of-archiving-5000-amiga-disks/). From there, I ended up moving on from Arduino to the Maple, then from there to a Teensy 3.0, and most recently, a rather fun little collection of boards based around a Chip known as the [ESP8266](https://en.wikipedia.org/wiki/ESP8266)
 
 ![esp8266 board](http://bit.ly/2tAIOE8)
 <!-- http://www.my-iota.com/Development%20boards/Witty%20Cloud%20(GizWits)%20-%20ESP8266%20Development%20Board/Witty%20Cloud%20(GizWits)%20-%20ESP8266%20Development%20Board_files/image002.jpg -->
@@ -28,6 +28,7 @@ That's pretty impressive for something that costs around 5$ shipped.
 When you know there are Arduino JSON libraries, and Arduino WebSocket libraries that can run on it, you start wondering: is it possible to host a Room for Game On on an ESP8266 ?
 
 I had a spare moment at a weekend, so decided to find out! =)
+<!--more-->
 
 I figured I'd create a room that allowed players in the room to alter the color of the light, and read the light sensors value.
 
