@@ -7,15 +7,20 @@ author: ilan
 ---
 ## tl;dr
 [advanced adventures](https://book.gameontext.org/walkthroughs/creatingYourOwnRoom.html)
+
 [scala](http://www.scala-lang.org).
+
 [sbt](http://www.scala-sbt.org/)
+
 [giter8](http://www.foundweekends.org/giter8/)
+
 [play](https://www.playframework.com/).
-[ensime)[http://ensime.org]
+
+[ensime](http://ensime.org)
 
 ## Day 0
 
-- So for me 2017/18 is going to include adventures in polyglot.
+So for me 2017/18 is going to include adventures in polyglot.
 > This  will include but will not be only restricted to
 > `Kotlin`,`Prolog`, `Erlang`, `Racket`, `Haskell`, `Closure`, `Scala`
 
