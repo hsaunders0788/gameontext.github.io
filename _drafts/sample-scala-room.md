@@ -28,5 +28,30 @@ So for me 2017/18 is going to include adventures in polyglot.
 
 ### Decide on tooling.
 - `play` framework looks fun as a framework for a sample room.
-  - `play` has a [web socket api](https://github.com/playframework/play-scala-websocket-example/tree/2.6.x).
+  - `play` has a [web socket api](https://www.playframework.com/documentation/2.6.x/ScalaWebSockets)
+  - `giter8` has a [starter template](https://github.com/foundweekends/giter8/wiki/giter8-templates) for `play`.
 - `ensime` looks fun as a development environment.
+
+### Learn to stop hating and love regexes
+
+```scala
+scala> sample
+res69: String =
+roomHello,<roomId>,{
+    "username": "username",
+    "userId": "<userId>",
+    "version": 1|2
+}
+
+scala> pattern
+res70: scala.util.matching.Regex = (?s)(\w+),([^,]*),(.*)
+
+scala> val pattern(target,id,payload) = sample
+target: String = roomHello
+id: String = <roomId>
+payload: String =
+{
+    "username": "username",
+    "userId": "<userId>",
+    "version": 1|2
+}```
