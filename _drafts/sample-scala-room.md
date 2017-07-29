@@ -28,5 +28,5 @@ So for me 2017/18 is going to include adventures in polyglot.
 
 ### Decide on tooling.
 - `play` framework looks fun as a framework for a sample room.
-  - `play` has a (web socket api)[https://github.com/playframework/play-scala-websocket-example/tree/2.6.x].
+  - `play` has a [web socket api](https://github.com/playframework/play-scala-websocket-example/tree/2.6.x).
 - `ensime` looks fun as a development environment.
