@@ -6,17 +6,17 @@ tags: [fun, profit, scala, play]
 author: ilan
 ---
 ## tl;dr
-[advanced adventures](https://book.gameontext.org/walkthroughs/creatingYourOwnRoom.html)
+[advanced adventures](https://book.gameontext.org/walkthroughs/creatingYourOwnRoom.html).
 
 [scala](http://www.scala-lang.org).
 
-[sbt](http://www.scala-sbt.org/)
+[sbt](http://www.scala-sbt.org/).
 
-[giter8](http://www.foundweekends.org/giter8/)
+[giter8](http://www.foundweekends.org/giter8/).
 
 [play](https://www.playframework.com/).
 
-[ensime](http://ensime.org)
+[ensime](http://ensime.org).
 
 ## Day 0
 
