@@ -56,3 +56,8 @@ payload: String =
     "version": 1|2
 }
 ```
+
+## Day 2
+
+- Learn about how the play framework works with [json](https://www.playframework.com/documentation/2.6.x/ScalaJson)
+- Add some code to parse the (roomHello|roomJoin) message and reply correctly.
