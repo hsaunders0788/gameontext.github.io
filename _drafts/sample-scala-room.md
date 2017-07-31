@@ -61,3 +61,9 @@ payload: String =
 
 - Learn about how the play framework works with [json](https://www.playframework.com/documentation/2.6.x/ScalaJson)
 - Add some code to parse the (roomHello|roomJoin) message and reply correctly.
+- [commit] (https://github.com/gameontext/sample-scala-room/commit/28102e83400d7f12a2c843bf5d48da7c34d7ab16)
+
+## Day 3
+
+- add websocket chat response
+- [commit] (https://github.com/gameontext/sample-scala-room/commit/6dcc22c1a82b09290995831f400ff45c960c3341)
