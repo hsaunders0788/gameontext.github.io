@@ -67,3 +67,8 @@ payload: String =
 
 - add websocket chat response
 - [commit](https://github.com/gameontext/sample-scala-room/commit/6dcc22c1a82b09290995831f400ff45c960c3341)
+
+## Day 4
+
+- hack up some room replies when home late after midnight
+- [commit](https://github.com/gameontext/sample-scala-room/commit/5e5fdf380f9c6f6e28395cb3902e5820e09f045a)
