@@ -72,3 +72,7 @@ payload: String =
 
 - hack up some room replies when home late after midnight
 - [commit](https://github.com/gameontext/sample-scala-room/commit/5e5fdf380f9c6f6e28395cb3902e5820e09f045a)
+
+## Day 5
+- tidy up a bit, make the code space a bit more cozy
+- [commit](https://github.com/gameontext/sample-scala-room/commit/c132d41cf85b40dc79c38a16a08c5fe3b29e3a1f)
