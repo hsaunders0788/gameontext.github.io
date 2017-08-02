@@ -76,5 +76,5 @@ payload: String =
 ## Day 5
 
 - tidy up a bit, make the code space a bit more cozy
-- [commit](https://github.com/gameontext/gameontext.github.io/commit/4224e8c580d32db07d6c2336cfb2189b3aef9821)
+- [commit](https://github.com/gameontext/sample-scala-room/commit/c132d41cf85b40dc79c38a16a08c5fe3b29e3a1f)
 - [commit](https://github.com/gameontext/sample-scala-room/commit/1b065465a6c06e3049297061b2f4df4b54517877)
