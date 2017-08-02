@@ -78,3 +78,11 @@ payload: String =
 - tidy up a bit, make the code space a bit more cozy
 - [commit](https://github.com/gameontext/sample-scala-room/commit/c132d41cf85b40dc79c38a16a08c5fe3b29e3a1f)
 - [commit](https://github.com/gameontext/sample-scala-room/commit/1b065465a6c06e3049297061b2f4df4b54517877)
+- start working on "room is running page", which leads to having to understand
+  - the [javascript security](https://www.playframework.com/documentation/2.6.x/SecurityHeaders) settings for play
+  - and also more specifically [content security policy](https://www.html5rocks.com/en/tutorials/security/content-security-policy/)
+  - and [also](https://www.playframework.com/documentation/2.6.x/resources/confs/filters-helpers/reference.conf)
+- realise that you need [bootstrap](http://getbootstrap.com/getting-started/) to make it look decent
+- using bootstrap, make a *your room is running page* with test buttons, to test web socket calls.
+![](http://imgur.com/a/uCz8K)
+- [commit](https://github.com/gameontext/sample-scala-room/commit/f8b6992d9a21c24bff191058514464ba2e02728f)
