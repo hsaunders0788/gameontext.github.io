@@ -86,4 +86,4 @@ payload: String =
 - using bootstrap, make a *your room is running page* with test buttons, to test web socket calls.
 - [commit](https://github.com/gameontext/sample-scala-room/commit/f8b6992d9a21c24bff191058514464ba2e02728f)
 
-![](http://i.imgur.com/4WKm1KX.png)
+![](http://i.imgur.com/msfwQ6F.png?1)
