@@ -87,3 +87,10 @@ payload: String =
 - [commit](https://github.com/gameontext/sample-scala-room/commit/f8b6992d9a21c24bff191058514464ba2e02728f)
 
 ![](http://i.imgur.com/msfwQ6F.png?1)
+
+## Day 6
+
+ooh, its getting addictive to play with the bootstrap
+- make it possible to edit preformed test message, or send arbritary message in the tests provided on the page.
+- [commit](https://github.com/gameontext/sample-scala-room/commit/e532f45faa6528d79a3f1d7e2b3ad9ff270de04b)
+![]([Imgur](http://i.imgur.com/jb4Us3h.png?1))
