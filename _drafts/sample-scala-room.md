@@ -109,6 +109,7 @@ oops... fix repo name from `sample-scala-room` to `sample-room-scala`
   also allow the app to run on any host. also allow web socket calls on any host.
 - woohoo and we have docker for the room.. so simple, no docker files. Yay!
 - so room is now running locally, and test screen works.. almost ready to publish image to clouds and connect up to gameon!
+- [commit](https://github.com/gameontext/sample-room-scala/commit/33cfa37416ea399331fd43814bd0b2da7fd2cf7a)
 ```
 sample-room-scala ilanpillemer$ sbt docker:publishLocal
 ...
