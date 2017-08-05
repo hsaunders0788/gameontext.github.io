@@ -86,8 +86,6 @@ payload: String =
 - using bootstrap, make a *your room is running page* with test buttons, to test web socket calls.
 - [commit](https://github.com/gameontext/sample-room-scala/commit/f8b6992d9a21c24bff191058514464ba2e02728f)
 
-![](http://i.imgur.com/msfwQ6F.png?1)
-
 ## Day 6
 
 ooh, its getting addictive to play with the bootstrap
@@ -108,11 +106,7 @@ oops... fix repo name from `sample-scala-room` to `sample-room-scala`
 
 - enter the [whale](http://www.scala-sbt.org/sbt-native-packager/formats/docker.html) which has its own native sbt plugin.
 - add a secret to conf, using well something from [here](https://randomkeygen.com/), not that secret if its in github though, is it?
-  yeah, well play is pretty sticky about it..
-  `The application secret has not been set, and we are in prod mode. Your application is not secure.`
-- also allow the app run on any host.
-- also allow web socket calls on any host.
-- Though, when you publish this live, you might want to restrict to specific host.
+  also allow the app to run on any host. also allow web socket calls on any host.
 - woohoo and we have docker for the room.. so simple, no docker files. Yay!
 - so room is now running locally, and test screen works.. almost ready to publish image to clouds and connect up to gameon!
 ```
