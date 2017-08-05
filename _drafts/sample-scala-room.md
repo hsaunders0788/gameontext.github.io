@@ -61,30 +61,30 @@ payload: String =
 
 - Learn about how the play framework works with [json](https://www.playframework.com/documentation/2.6.x/ScalaJson)
 - Add some code to parse the (roomHello|roomJoin) message and reply correctly.
-- [commit](https://github.com/gameontext/sample-scala-room/commit/28102e83400d7f12a2c843bf5d48da7c34d7ab16)
+- [commit](https://github.com/gameontext/sample-room-scala/commit/28102e83400d7f12a2c843bf5d48da7c34d7ab16)
 
 ## Day 3
 
 - add websocket chat response
-- [commit](https://github.com/gameontext/sample-scala-room/commit/6dcc22c1a82b09290995831f400ff45c960c3341)
+- [commit](https://github.com/gameontext/sample-room-scala/commit/6dcc22c1a82b09290995831f400ff45c960c3341)
 
 ## Day 4
 
 - hack up some room replies when home late after midnight
-- [commit](https://github.com/gameontext/sample-scala-room/commit/5e5fdf380f9c6f6e28395cb3902e5820e09f045a)
+- [commit](https://github.com/gameontext/sample-room-scala/commit/5e5fdf380f9c6f6e28395cb3902e5820e09f045a)
 
 ## Day 5
 
 - tidy up a bit, make the code space a bit more cozy
-- [commit](https://github.com/gameontext/sample-scala-room/commit/c132d41cf85b40dc79c38a16a08c5fe3b29e3a1f)
-- [commit](https://github.com/gameontext/sample-scala-room/commit/1b065465a6c06e3049297061b2f4df4b54517877)
+- [commit](https://github.com/gameontext/sample-room-scala/commit/c132d41cf85b40dc79c38a16a08c5fe3b29e3a1f)
+- [commit](https://github.com/gameontext/sample-room-scala/commit/1b065465a6c06e3049297061b2f4df4b54517877)
 - start working on "room is running page", which leads to having to understand
   - the [javascript security](https://www.playframework.com/documentation/2.6.x/SecurityHeaders) settings for play
   - and also more specifically [content security policy](https://www.html5rocks.com/en/tutorials/security/content-security-policy/)
   - and [also](https://www.playframework.com/documentation/2.6.x/resources/confs/filters-helpers/reference.conf)
 - realise that you need [bootstrap](http://getbootstrap.com/getting-started/) to make it look decent
 - using bootstrap, make a *your room is running page* with test buttons, to test web socket calls.
-- [commit](https://github.com/gameontext/sample-scala-room/commit/f8b6992d9a21c24bff191058514464ba2e02728f)
+- [commit](https://github.com/gameontext/sample-room-scala/commit/f8b6992d9a21c24bff191058514464ba2e02728f)
 
 ![](http://i.imgur.com/msfwQ6F.png?1)
 
@@ -92,7 +92,16 @@ payload: String =
 
 ooh, its getting addictive to play with the bootstrap
 - make it possible to edit preformed test message, or send arbritary message in the tests provided on the page.
-- [commit](https://github.com/gameontext/sample-scala-room/commit/e532f45faa6528d79a3f1d7e2b3ad9ff270de04b)
+- [commit](https://github.com/gameontext/sample-room-scala/commit/e532f45faa6528d79a3f1d7e2b3ad9ff270de04b)
 ![](http://i.imgur.com/jb4Us3h.png?1)
 
 - learn that in bootstratp 1 == 12 so that the room test screen flows responsively.
+
+## Day 7
+
+stay up until 3am refactoring code unrelated to this, but in Scala.
+So all the ensime skillz gained were useful, and got to use partial functions and currying. w00t!
+
+# Day 8
+
+oops... fix repo name from `sample-scala-room` to `sample-room-scala`
