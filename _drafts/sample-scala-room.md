@@ -105,3 +105,28 @@ So all the ensime skillz gained were useful, and got to use partial functions an
 # Day 8
 
 oops... fix repo name from `sample-scala-room` to `sample-room-scala`
+
+- enter the [whale](http://www.scala-sbt.org/sbt-native-packager/formats/docker.html) which has its own native sbt plugin.
+- add a secret to conf, using well something from [here](https://randomkeygen.com/), not that secret if its in github though, is it?
+  yeah, well play is pretty sticky about it..
+  `The application secret has not been set, and we are in prod mode. Your application is not secure.`
+- also allow the app run on any host.
+- also allow web socket calls on any host.
+- Though, when you publish this live, you might want to restrict to specific host.
+- woohoo and we have docker for the room.. so simple, no docker files. Yay!
+- so room is now running locally, and test screen works.. almost ready to publish image to clouds and connect up to gameon!
+```
+sample-room-scala ilanpillemer$ sbt docker:publishLocal
+...
+[info] Successfully built 6738f15ebd2e
+[info] Built image sample-room-scala:1.0-SNAPSHOT
+...
+sample-room-scala ilanpillemer$ docker images | grep sample
+...
+sample-room-scala               1.0-SNAPSHOT        6738f15ebd2e        4 seconds ago       817.7 MB
+sample-scala-room               1.0-SNAPSHOT        f3ffa05f0f4e        58 minutes ago      817.7 MB
+...
+sample-room-scala ilanpillemer$ docker run -p 9000:9000 6738f15ebd2e
+[info] play.api.Play - Application started (Prod)
+[info] p.c.s.AkkaHttpServer - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+```
