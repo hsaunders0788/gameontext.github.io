@@ -7,7 +7,9 @@ author: ilan
 ---
 ## tl;dr
 
-[advanced adventures](https://book.gameontext.org/walkthroughs/creatingYourOwnRoom.html).
+- [advanced adventures](https://book.gameontext.org/walkthroughs/creatingYourOwnRoom.html).
+- [sample-room-scala](https://github.com/gameontext/sample-room-scala)
+- [the room up and running](http://134.168.52.95:9000/)
 
 ## Day 0
 
