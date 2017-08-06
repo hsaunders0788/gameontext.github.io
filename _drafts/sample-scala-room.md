@@ -88,7 +88,7 @@ payload: String =
 ooh, its getting addictive to play with the bootstrap
 - make it possible to edit preformed test message, or send arbritary message in the tests provided on the page.
 - [commit](https://github.com/gameontext/sample-room-scala/commit/e532f45faa6528d79a3f1d7e2b3ad9ff270de04b)
-[Imgur](http://i.imgur.com/mdfxKtn.png)
+![](http://i.imgur.com/mdfxKtn.png)
 
 - learn that in bootstratp 1 == 12 so that the room test screen flows responsively.
 
@@ -137,4 +137,4 @@ sample-room-scala ilanpillemer$ docker run -p 9000:9000 6738f15ebd2e
 - add the proforma stuff to the README
 - job done
 
-- [Imgur](http://i.imgur.com/wDzgnTW.png)
+![](http://i.imgur.com/wDzgnTW.png)
