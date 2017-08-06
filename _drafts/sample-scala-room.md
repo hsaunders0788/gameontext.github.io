@@ -6,17 +6,8 @@ tags: [fun, profit, scala, play]
 author: ilan
 ---
 ## tl;dr
+
 [advanced adventures](https://book.gameontext.org/walkthroughs/creatingYourOwnRoom.html).
-
-[scala](http://www.scala-lang.org).
-
-[sbt](http://www.scala-sbt.org/).
-
-[giter8](http://www.foundweekends.org/giter8/).
-
-[play](https://www.playframework.com/).
-
-[ensime](http://ensime.org).
 
 ## Day 0
 
@@ -27,7 +18,11 @@ So for me 2017/18 is going to include adventures in polyglot.
 ## Day 1
 
 ### Decide on tooling.
-- `play` framework looks fun as a framework for a sample room.
+- [scala](http://www.scala-lang.org) is the language.
+- [sbt](http://www.scala-sbt.org/) is the build tool.
+- [giter8](http://www.foundweekends.org/giter8/) to set up starter directories.
+- [play](https://www.playframework.com/) is the Websocket Framework.
+- [ensime](http://ensime.org) is the plugin for emacs.
   - `play` has a [web socket api](https://www.playframework.com/documentation/2.6.x/ScalaWebSockets)
   - `giter8` has a [starter template](https://github.com/foundweekends/giter8/wiki/giter8-templates) for `play`.
 - `ensime` looks fun as a development environment.
@@ -56,6 +51,8 @@ payload: String =
     "version": 1|2
 }
 ```
+
+`<!--more-->`
 
 ## Day 2
 
@@ -91,7 +88,7 @@ payload: String =
 ooh, its getting addictive to play with the bootstrap
 - make it possible to edit preformed test message, or send arbritary message in the tests provided on the page.
 - [commit](https://github.com/gameontext/sample-room-scala/commit/e532f45faa6528d79a3f1d7e2b3ad9ff270de04b)
-![](http://i.imgur.com/jb4Us3h.png?1)
+[Imgur](http://i.imgur.com/mdfxKtn.png)
 
 - learn that in bootstratp 1 == 12 so that the room test screen flows responsively.
 
@@ -100,7 +97,7 @@ ooh, its getting addictive to play with the bootstrap
 stay up until 3am refactoring code unrelated to this, but in Scala.
 So all the ensime skillz gained were useful, and got to use partial functions and currying. w00t!
 
-# Day 8
+## Day 8
 
 oops... fix repo name from `sample-scala-room` to `sample-room-scala`
 
@@ -125,3 +122,19 @@ sample-room-scala ilanpillemer$ docker run -p 9000:9000 6738f15ebd2e
 [info] play.api.Play - Application started (Prod)
 [info] p.c.s.AkkaHttpServer - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 ```
+
+## Day 9
+
+- add license
+- upload image to dockerhub : [ilanpillemer/sample-scala-room](https://hub.docker.com/r/ilanpillemer/sample-room-scala/)
+- install [bluemix command line](https://clis.ng.bluemix.net/ui/home.html)
+- copy image from docker hub to bluemix
+- still have one more ip addresss avaialable on free tier at blue mix, so use that and start container
+  - though no more free ones left now... :(
+- http://134.168.52.95:9000/ is up and running...
+- register room in gameon!
+- go to room and see it working. (roomid: 3a4fb6dee190696852882ba3e78921a4)
+- add the proforma stuff to the README
+- job done
+
+- [Imgur](http://i.imgur.com/wDzgnTW.png)
