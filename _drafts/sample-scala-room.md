@@ -88,6 +88,7 @@ payload: String =
 ooh, its getting addictive to play with the bootstrap
 - make it possible to edit preformed test message, or send arbritary message in the tests provided on the page.
 - [commit](https://github.com/gameontext/sample-room-scala/commit/e532f45faa6528d79a3f1d7e2b3ad9ff270de04b)
+
 ![](http://i.imgur.com/mdfxKtn.png)
 
 - learn that in bootstratp 1 == 12 so that the room test screen flows responsively.
