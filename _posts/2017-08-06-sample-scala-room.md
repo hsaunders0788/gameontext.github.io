@@ -91,7 +91,7 @@ ooh, its getting addictive to play with the bootstrap
 - make it possible to edit preformed test message, or send arbritary message in the tests provided on the page.
 - [commit](https://github.com/gameontext/sample-room-scala/commit/e532f45faa6528d79a3f1d7e2b3ad9ff270de04b)
 
-![](http://i.imgur.com/mdfxKtn.png)
+<a href="http://i.imgur.com/mdfxKtn.png"><img src="http://i.imgur.com/mdfxKtn.png" width="600" /></a>
 
 - learn that in bootstratp 1 == 12 so that the room test screen flows responsively.
 
@@ -132,7 +132,7 @@ sample-room-scala ilanpillemer$ docker run -p 9000:9000 6738f15ebd2e
 - upload image to dockerhub : [ilanpillemer/sample-scala-room](https://hub.docker.com/r/ilanpillemer/sample-room-scala/)
 - install [bluemix command line](https://clis.ng.bluemix.net/ui/home.html)
 - copy image from docker hub to bluemix
-- still have one more ip addresss avaialable on free tier at blue mix, so use that and start container
+- still have one more ip address available on free tier at blue mix, so use that and start container
   - though no more free ones left now... :(
 - http://134.168.52.95:9000/ is up and running...
 - register room in gameon!
@@ -140,4 +140,4 @@ sample-room-scala ilanpillemer$ docker run -p 9000:9000 6738f15ebd2e
 - add the proforma stuff to the README
 - job done
 
-![](http://i.imgur.com/wDzgnTW.png)
+<a href="http://i.imgur.com/wDzgnTW.png"><img src="http://i.imgur.com/wDzgnTW.png" width="600" /></a>
