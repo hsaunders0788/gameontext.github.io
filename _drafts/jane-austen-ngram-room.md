@@ -97,12 +97,5 @@ Everything up to and including the year of publication will not be included in t
 Also hadoop in its "out-of-the-box" formulation processes one line at time. This means in the initial mapping each value is one line. To be semantically correct this is not ideal. Rather than writing new custom initial partitioning for hadoop, the texts will be reformatted so that each paragraph is on one line. This will be done using `fmt`.
 
 ```
-$ fmt -w 100000 < input_original/pg105.txt > input/pg105.txt
-$ fmt -w 100000 < input_original/pg121.txt > input/pg121.txt
-$ fmt -w 100000 < input_original/pg1212.txt > input/pg1212.txt
-$ fmt -w 100000 < input_original/pg1342.txt > input/pg1342.txt
-$ fmt -w 100000 < input_original/pg141.txt > input/pg141.txt
-$ fmt -w 100000 < input_original/pg158.txt > input/pg158.txt
-$ fmt -w 100000 < input_original/pg161.txt > input/pg161.txt
-$ fmt -w 100000 < input_original/pg946.txt > input/pg946.txt
+$ fmt -w 100000 < book.txt > processed/book.txt
 ```
