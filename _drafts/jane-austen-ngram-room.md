@@ -27,14 +27,14 @@ Austen room, where using ngram probabilities from the words in her
 novels, her corpus - one could interact with those probabilities in
 various different ways using the game on protocols.
 
-### Details that need to be Thought About
-#### The Corpus
+### The Tooling
 - [Apache Hadoop](http://hadoop.apache.org/) is the data cruncher.
 - [sample-room-scala](https://github.com/gameontext/sample-room-scala) is the base template for the room.
 - [Project Gutenberg](https://www.gutenberg.org/) is the data source for the `words in documents` i.e. the novels of Jane Austen.
 - [The Book On Stuff Like This](https://web.stanford.edu/~jurafsky/slp3/) is The Book on Stuff Like This.
 
 ### The documents, their preprocessing and word tokenisation.
+#### The Corpus
 - [PERSUASION](http://onlinebooks.library.upenn.edu/webbin/gutbook/lookup?num=105) by Jane Austen
 - [NORTHANGER ABBEY](http://onlinebooks.library.upenn.edu/webbin/gutbook/lookup?num=121) by Jane Austen
 - [LOVE AND FREINDSHIP AND OTHER EARLY WORKS](http://onlinebooks.library.upenn.edu/webbin/gutbook/lookup?num=1212) by Jane Austen
