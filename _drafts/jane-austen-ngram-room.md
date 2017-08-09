@@ -37,7 +37,7 @@ various different ways using the game on protocols.
 #### The Corpus
 - [PERSUASION](http://onlinebooks.library.upenn.edu/webbin/gutbook/lookup?num=105) by Jane Austen
 - [NORTHANGER ABBEY](http://onlinebooks.library.upenn.edu/webbin/gutbook/lookup?num=121) by Jane Austen
-- [LOVE AND FREINDSHIP AND OTHER EARLY WORKS](http://onlinebooks.library.upenn.edu/webbin/gutbook/lookup?num=1212) by Jane Austen
+- [LOVE AND FRIENDSHIP AND OTHER EARLY WORKS](http://onlinebooks.library.upenn.edu/webbin/gutbook/lookup?num=1212) by Jane Austen
 - [PRIDE AND PREDUJICE](http://onlinebooks.library.upenn.edu/webbin/gutbook/lookup?num=1342) by Jane Austen
 - [MANSFIELD PARK](http://onlinebooks.library.upenn.edu/webbin/gutbook/lookup?num=141) by Jane Austen
 - [EMMA](http://onlinebooks.library.upenn.edu/webbin/gutbook/lookup?num=158) by Jane Austen
