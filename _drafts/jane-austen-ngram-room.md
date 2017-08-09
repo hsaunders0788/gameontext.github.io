@@ -94,7 +94,7 @@ Everything up to and including the year of publication will not be included in t
 
 ##### Change line length...
 
-Also hadoop in its "out-of-the-box" formulation processes one line at time. This means in the initial mapping each value is one line. To be semantically correct this is not ideal. Rather than writing new custom initial partitioning for hadoop, the texts will be reformatted so that each paragraph is on one line. This will be done using `fmt`.
+Also hadoop in its "out-of-the-box" formulation processes one line at time. This means in the initial mapping each value is one line. To be semantically correct this is not ideal as the texts have line endings at non semantic points. Rather than writing new custom initial partitioning for hadoop, the texts will be reformatted so that each paragraph is on one line. This will be done using `fmt`.
 
 ```
 $ fmt -w 100000 < book.txt > processed/book.txt
