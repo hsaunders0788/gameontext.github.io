@@ -10,10 +10,10 @@ author: ilan
 Over the last year I have been thinking, reading and learning about
 `words in documents`. And what kind of information can be extracted
 from `words in documents`. One interesting avenue of exploration is:
-- the probabilities of two words appearing next to each other in a
-particular order. 
-- The probability of three words appearing next to each other ... 
-- And so on and so forth. 
+- The probabilities of two words appearing next to each other in a
+particular order.
+- The probability of three words appearing next to each other ...
+- And so on and so forth.
 
 Analysis of these probabilities have all sorts of interesting
 implications; and, allow for fun experiments.
