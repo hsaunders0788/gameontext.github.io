@@ -31,3 +31,4 @@ various different ways using the game on protocols.
 - [Apache Hadoop](http://hadoop.apache.org/) is the data cruncher.
 - [sample-room-scala](https://github.com/gameontext/sample-room-scala) is the base template for the room.
 - [Project Gutenberg](https://www.gutenberg.org/) is the data source for the `words in documents` i.e. the novels of Jane Austen.
+- [The Book On Stuff Like This](https://web.stanford.edu/~jurafsky/slp3/) is The Book on Stuff like this.g
