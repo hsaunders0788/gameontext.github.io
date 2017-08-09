@@ -47,9 +47,11 @@ various different ways using the game on protocols.
 Before crunching the data some preprocessing and decisions on tokenisation of the
 words in the document needs to be decided.
 #### Preprocessing the text before tokenisation.
-##### Remove preamble
+##### Remove preamble...
 
-Project Gutenberg provides the text in a natural manner, and also with some pretext which is not really part of the novel
+Project Gutenberg provides the text in a natural manner, and also with some pretext which is not really part of the novel:
+
+
 > The Project Gutenberg EBook of Persuasion, by Jane Austen
 >
 > This eBook is for the use of anyone anywhere at no cost and with
@@ -58,11 +60,17 @@ Project Gutenberg provides the text in a natural manner, and also with some pret
 > with this eBook or online at www.gutenberg.net
 >
 > Title: Persuasion
+>
 > Author: Jane Austen
+>
 > Release Date: June 5, 2008 [EBook #105]
+>
 > Last Updated: February 15, 2015
+>
 > Language: English
+>
 > *** START OF THIS PROJECT GUTENBERG EBOOK PERSUASION ***
+>
 > Produced by Sharon Partridge and Martin Ward. HTML version
 > by Al Haines.
 >
@@ -84,7 +92,7 @@ Project Gutenberg provides the text in a natural manner, and also with some pret
 
 Everything up to and including the year of publication will not be included in the tokenisation, and n-gram derivation.
 
-##### Change line length
+##### Change line length...
 
 Also hadoop used in its "out-of-the-box" formulation processes one line at time. This means in the initial mapping each value would be line. To be semantically correct this is not ideal. Rather than writing new custom initial partitioning for hadoop, the texts will be reformatted so that each paragraph is on one line. This will be done using `fmt`.
 
