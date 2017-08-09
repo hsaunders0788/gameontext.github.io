@@ -46,3 +46,38 @@ various different ways using the game on protocols.
 
 Before crunching the data some preprocessing and decisions on tokenisation of the
 words in the document needs to be decided.
+#### Preprocessing the text before tokenisation.
+Project Gutenberg provides the text in natural manner, and also with some pretext which is not really part of the novel; for example
+> The Project Gutenberg EBook of Persuasion, by Jane Austen
+>
+> This eBook is for the use of anyone anywhere at no cost and with
+> almost no restrictions whatsoever.  You may copy it, give it away or
+> re-use it under the terms of the Project Gutenberg License included
+> with this eBook or online at www.gutenberg.net
+...
+> Title: Persuasion
+> Author: Jane Austen
+> Release Date: June 5, 2008 [EBook #105]
+> Last Updated: February 15, 2015
+> Language: English
+> *** START OF THIS PROJECT GUTENBERG EBOOK PERSUASION ***
+...
+> Produced by Sharon Partridge and Martin Ward. HTML version
+> by Al Haines.
+>
+> Persuasion
+>
+>
+> by
+>
+> Jane Austen
+>
+> (1818)
+...
+>
+> Chapter 1
+>
+>
+> Sir Walter Elliot, of Kellynch Hall, in Somersetshire, was a man who,
+...
+Everything up to and including the year of publication will not be included in the tokenisation, and n-gram derivation.
