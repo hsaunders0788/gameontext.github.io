@@ -27,7 +27,8 @@ Austen room, where using ngram probabilities from the words in her
 novels, her corpus - one could interact with those probabilities in
 various different ways using the game on protocols.
 
-### The tooling.
+### Details that need to be Thought About
+#### The Corpus
 - [Apache Hadoop](http://hadoop.apache.org/) is the data cruncher.
 - [sample-room-scala](https://github.com/gameontext/sample-room-scala) is the base template for the room.
 - [Project Gutenberg](https://www.gutenberg.org/) is the data source for the `words in documents` i.e. the novels of Jane Austen.
@@ -43,6 +44,5 @@ various different ways using the game on protocols.
 - [SENSE AND SENSIBILITY](http://onlinebooks.library.upenn.edu/webbin/gutbook/lookup?num=161) by Jane Austen
 - [LADY SUSAN](http://onlinebooks.library.upenn.edu/webbin/gutbook/lookup?num=946) by Jane Austen
 
-#### Which Jane Austen novels?
 Before crunching the data some preprocessing and decisions on tokenisation of the
 words in the document needs to be decided.
