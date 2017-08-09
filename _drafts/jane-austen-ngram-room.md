@@ -82,7 +82,7 @@ Project Gutenberg provides the text in a natural manner, and also with some pret
 > Jane Austen
 >
 > (1818)
-...
+>
 >
 > Chapter 1
 >
@@ -94,7 +94,7 @@ Everything up to and including the year of publication will not be included in t
 
 ##### Change line length...
 
-Also hadoop used in its "out-of-the-box" formulation processes one line at time. This means in the initial mapping each value would be line. To be semantically correct this is not ideal. Rather than writing new custom initial partitioning for hadoop, the texts will be reformatted so that each paragraph is on one line. This will be done using `fmt`.
+Also hadoop in its "out-of-the-box" formulation processes one line at time. This means in the initial mapping each value is one line. To be semantically correct this is not ideal. Rather than writing new custom initial partitioning for hadoop, the texts will be reformatted so that each paragraph is on one line. This will be done using `fmt`.
 
 ```
 // bash-3.2$ fmt -w 100000 < input_original/pg105.txt > input/pg105.txt
