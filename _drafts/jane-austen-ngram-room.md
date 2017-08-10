@@ -122,6 +122,6 @@ the different results.
 
 ```
 <p> <this> <is> <an> <interesting> <day> <.>
-<The> <boy> <said> <"> <Hi> <"> <!>
+<The> <boy> <said> <"> <Hi> <!> <"> <.>
 <Lets> <get> <going> <?> <p>
 ```
