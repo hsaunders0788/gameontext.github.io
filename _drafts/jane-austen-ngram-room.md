@@ -99,3 +99,25 @@ Also hadoop in its "out-of-the-box" formulation processes one line at time. This
 ```
 $ fmt -w 100000 < book.txt > processed/book.txt
 ```
+
+##### Tokenisation
+
+How should words be decided. In the sense of probability calculations
+we need to define what a `word` is; or what a `token` is. And should
+new tokens be added in order to provide better semantic sense. It will
+be interesting to tokenise in different ways, and then experiment with
+the different results.
+
+- Option 1: In this option tokenisation will
+  - not remove or delete any punctuation
+  - add a beginning of paragraph marker that will be considered a token
+  - add an end of paragraph marker that will be considered a token
+  - treat punctuation marks themselves as tokens.
+
+  So for example if there is a paragraph such as the below.
+
+  > This is a interesting day. The boy said "Hi!". Lets get going!
+
+  It would be tokenised as
+
+  > <p> <this> <is> <a> <interesting> <day> <.> <The> <boy> <said> <"> <Hi> <"> <.> <Lets> <get> <going> <!>
