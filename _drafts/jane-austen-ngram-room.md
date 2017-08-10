@@ -116,12 +116,12 @@ the different results.
 
   So for example if there is a paragraph such as the below.
 
-  > This is a interesting day. The boy said "Hi!". Lets get going!
+  > This is an interesting day. The boy said "Hi!". Lets get going?
 
   It would be tokenised as
 
 ```
-<p> <this> <is> <a> <interesting> <day> <.>
-<The> <boy> <said> <"> <Hi> <"> <.>
-<Lets> <get> <going> <!> <p>
+<p> <this> <is> <an> <interesting> <day> <.>
+<The> <boy> <said> <"> <Hi> <"> <!>
+<Lets> <get> <going> <?> <p>
 ```
