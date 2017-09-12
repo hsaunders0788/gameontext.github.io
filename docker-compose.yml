@@ -3,7 +3,7 @@ version: '2'
 services:
   jekyll:
     image: jekyll/builder:pages
-    command: bundle update
+    command: [sh, -c, "ls /srv/jekyll/vendor; if [ ! -f '/srv/jekyll/vendor/done' ]; then bundle update && touch /srv/jekyll/vendor/done; fi"]
     volumes:
       - $PWD:/srv/jekyll
       - $PWD/.vendor:/srv/jekyll/vendor
@@ -13,7 +13,7 @@ services:
 
   go-blog:
     build: .
-    command: bundle exec jekyll serve --drafts --watch --incremental --host=0.0.0.0
+    command: [sh, -c, "while [ ! -f '/srv/jekyll/vendor/done' ]; do echo 'waiting for update...'; sleep 2; done; bundle exec jekyll s --drafts --watch --incremental --host=0.0.0.0"]
     depends_on:
       - jekyll
     volumes:
