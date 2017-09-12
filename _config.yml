@@ -14,7 +14,7 @@ google_analytics: UA-90113653-2
 # Build settings
 markdown: kramdown
 excerpt_separator: <!--more-->
-gems:
+plugins:
   - jekyll-feed
   - jekyll-avatar
   - jekyll-sitemap

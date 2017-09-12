@@ -2,13 +2,28 @@ version: '2'
 
 services:
   jekyll:
-    build: .
-    command: bundle exec jekyll s
+    image: jekyll/builder:pages
+    command: bundle update
     volumes:
-      - '.:/srv/jekyll'
-      - '.vendor:/srv/jekyll/vendor'
+      - $PWD:/srv/jekyll
+      - $PWD/.vendor:/srv/jekyll/vendor
+    container_name: jekyll
+    environment:
+      - BUNDLE_CACHE
+
+  go-blog:
+    build: .
+    command: bundle exec jekyll serve --drafts --watch --incremental --host=0.0.0.0
+    depends_on:
+      - jekyll
+    volumes:
+      - $PWD:/srv/jekyll
+      - $PWD/.vendor:/srv/jekyll/vendor
     ports:
       - "4000:4000"
+      - "35729:35729"
+    container_name: go-blog
     environment:
       - POLLING
       - BUNDLE_CACHE
+      - PAGES_REPO_NWO=gameontext/gameontext.github.io
